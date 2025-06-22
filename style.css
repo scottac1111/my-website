@@ -1,0 +1,187 @@
+/* Import Proxima Nova font from Adobe Fonts or use a fallback */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap');
+
+/* Site Header Styles */
+.site-header {
+    /* Simple site header styling */
+    width: 100%;
+    text-align: center;
+    font-family: 'Proxima Nova', 'Montserrat', Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #222; /* dark gray */
+    background: #f6f7f9;
+    padding: 1rem 0 0.5rem 0;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 2px 8px 0 rgba(60,60,60,0.04);
+}
+
+.header-content {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.jerry-can {
+    height: 1.5rem;
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* CTA Banner Styles */
+.cta-banner {
+    /* Tall, visually striking banner */
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #fffbe6 0%, #f6f7f9 100%);
+    box-shadow: 0 4px 24px 0 rgba(60,60,60,0.08);
+    border-radius: 1.5rem;
+    margin: 3rem auto;
+    max-width: 700px;
+    padding: 3rem 2rem;
+}
+
+.cta-title {
+    /* Large, bold heading */
+    font-family: 'Proxima Nova', 'Montserrat', Arial, sans-serif;
+    font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.cta-desc {
+    /* Short description text */
+    font-family: 'Proxima Nova', 'Montserrat', Arial, sans-serif;
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+    text-align: center;
+    max-width: 500px;
+}
+
+.cta-btn {
+    /* Eye-catching orange button */
+    display: inline-block;
+    background: linear-gradient(90deg, #ffb300 0%, #ff6f00 100%);
+    color: #fff;
+    font-family: 'Proxima Nova', 'Montserrat', Arial, sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    padding: 1rem 2.5rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    box-shadow: 0 2px 8px 0 rgba(255, 111, 0, 0.15);
+    transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+}
+
+.cta-btn:hover, .cta-btn:focus {
+    /* Button hover effect */
+    background: linear-gradient(90deg, #ff9800 0%, #ffb300 100%);
+    box-shadow: 0 4px 16px 0 rgba(255, 111, 0, 0.22);
+    transform: translateY(-2px) scale(1.03);
+}
+
+body {
+    background-color: #fafbfc;
+    /* Light grey background for contrast */
+}
+
+/* Info Section Styles */
+.info-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2.5rem 0 0 0;
+    padding: 0 1rem;
+}
+
+.info-images-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 2.5rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    /* Remove background and padding from the row */
+}
+
+.info-img-large {
+    width: 320px;
+    max-width: 45vw;
+    height: auto;
+    border-radius: 1.2rem;
+    box-shadow: 0 2px 16px 0 rgba(60,60,60,0.12);
+    object-fit: cover;
+    background: #23272b; /* dark grey background for contrast */
+    padding: 1.2rem;
+    box-sizing: border-box;
+    border: 2px solid #23272b;
+    /* Each image now has its own background and border */
+}
+
+.info-text-centered {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.info-title {
+    font-family: 'Proxima Nova', 'Montserrat', Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 0.5rem;
+}
+
+.info-desc {
+    font-family: 'Proxima Nova', 'Montserrat', Arial, sans-serif;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.newsletter-section {
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem 0 2rem 0;
+}
+
+.newsletter-btn {
+    display: inline-block;
+    background: linear-gradient(90deg, #ffd600 0%, #ffb300 100%);
+    color: #23272b;
+    font-family: 'Proxima Nova', 'Montserrat', Arial, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 1rem 2.5rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    box-shadow: 0 2px 8px 0 rgba(255, 214, 0, 0.12);
+    transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+}
+
+.newsletter-btn:hover, .newsletter-btn:focus {
+    background: linear-gradient(90deg, #ffb300 0%, #ffd600 100%);
+    color: #222;
+    box-shadow: 0 4px 16px 0 rgba(255, 214, 0, 0.18);
+    transform: translateY(-2px) scale(1.03);
+}
+
+@media (max-width: 800px) {
+    .info-images-row {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .info-img-large {
+        width: 90vw;
+        max-width: 100%;
+    }
+}
